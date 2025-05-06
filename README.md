@@ -8,8 +8,12 @@ Ani-API is a Node.js API service providing information on various entertainment 
 
 1. Fork or clone this repository
 2. Connect your repository to Vercel
-3. Vercel will automatically detect the configuration and deploy the API
-4. The API will be available at your Vercel domain
+3. In the Vercel project settings:
+   - Set the Build Command to `npm run build`
+   - Set the Output Directory to `public`
+   - Set the Install Command to `npm install`
+4. Deploy the project
+5. The API will be available at your Vercel domain
 
 #### Environment Variables (Optional)
 
