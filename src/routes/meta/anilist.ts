@@ -7,6 +7,7 @@ import type { Redis } from 'ioredis';
 import cache , { HianimeCache } from '../../utils/cache';
 import { PROVIDERS_LIST } from '../../utils/providers-list';
 import { HiAnime } from 'aniwatch';
+import { hianimeToAnilist } from '../../providers/meta/anilist-to-mal';
 
 const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   // Initialize the AniList provider
@@ -419,6 +420,8 @@ const routes = async (fastify: FastifyInstance, options: RegisterOptions) => {
   // AniList episodes endpoint
   fastify.get('/episodes/:id', async (request: FastifyRequest, reply: FastifyReply) => {
     const id = decodeURIComponent((request.params as { id: string }).id.trim());
+    const anilistInfo = await hianimeToAnilist(Number(id));
+    console.log(anilistInfo);
     const fetchFiller =
       ((request.query as { fetchFiller?: string }).fetchFiller || '').toLowerCase() === 'true';
     const dub = ((request.query as { dub?: string }).dub || '').toLowerCase() === 'true';
