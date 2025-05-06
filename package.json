@@ -14,7 +14,7 @@
     "prepare": "husky || true",
     "dev": "bun run src/main.ts",
     "start": "node server.js",
-    "vercel-build": "npm run build"
+    "vercel-build": "node vercel-build.js"
   },
   "pre-commit": [
     "lint",
