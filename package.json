@@ -4,13 +4,17 @@
   "description": "Nodejs library that provides high-level APIs for obtaining information on various entertainment media such as books, movies, comic books, anime, manga, and so on.",
   "main": "public/index.js",
   "types": "public/index.d.ts",
+  "engines": {
+    "node": ">=14.x"
+  },
   "scripts": {
     "build": "rimraf public && tsc -p tsconfig.json",
     "version": "auto-changelog -p && git add CHANGELOG.md",
     "lint": "prettier --write .",
     "prepare": "husky || true",
     "dev": "bun run src/main.ts",
-    "start": "node public/main.js"
+    "start": "node public/main.js",
+    "vercel-build": "node build.js"
   },
   "pre-commit": [
     "lint",
