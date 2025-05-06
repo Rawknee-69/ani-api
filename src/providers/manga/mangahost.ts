@@ -12,7 +12,7 @@ import {
 
 class MangaHost extends MangaParser {
   override readonly name = 'MangaHost';
-  protected override baseUrl = 'https://mangahosted.com';
+  protected override baseUrl = 'https://mangahosted.org';
   protected override logo = 'https://i.imgur.com/OVlhhsR.png';
   protected override classPath = 'MANGA.MangaHost';
 

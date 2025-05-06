@@ -3,7 +3,7 @@ import { IMangaChapterPage, IMangaInfo, IMangaResult, ISearch, MangaParser, Medi
 
 class ComicK extends MangaParser {
   override readonly name = 'ComicK';
-  protected override baseUrl = 'https://comick.app';
+  protected override baseUrl = 'https://comick.io';
   protected override logo = 'https://th.bing.com/th/id/OIP.fw4WrmAoA2PmKitiyMzUIgAAAA?pid=ImgDet&rs=1';
   protected override classPath = 'MANGA.ComicK';
 

@@ -12,8 +12,8 @@ import {
 
 class BRMangas extends MangaParser {
   override readonly name = 'BRMangas';
-  protected override baseUrl = 'https://www.brmangas.net';
-  protected override logo = 'https://www.brmangas.net/wp-content/themes/brmangasnew/images/svg/logo.svg';
+  protected override baseUrl = 'https://brmangas.top';
+  protected override logo = 'https://brmangas.top/wp-content/themes/brmangasnew/images/svg/logo.svg';
   protected override classPath = 'MANGA.BRMangas';
 
   override fetchMangaInfo = async (mangaId: string): Promise<IMangaInfo> => {

@@ -15,12 +15,12 @@ import { AxiosAdapter } from 'axios';
 
 class Bilibili extends AnimeParser {
   override readonly name = 'Bilibili';
-  protected override baseUrl = 'https://bilibili.tv';
+  protected override baseUrl = 'https://bilibili.com';
   protected override logo =
     'https://w7.pngwing.com/pngs/656/356/png-transparent-bilibili-thumbnail-social-media-icons.png';
   protected override classPath = 'ANIME.Bilibili';
 
-  private apiUrl = 'https://api.bilibili.tv/intl/gateway/web';
+  private apiUrl = 'https://api.bilibili.com/intl/gateway/web';
 
   private cookie = '';
   private locale = 'en_US';

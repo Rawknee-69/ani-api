@@ -17,8 +17,8 @@ import { AxiosAdapter } from 'axios';
 
 class Anix extends AnimeParser {
   override readonly name = 'Anix';
-  protected override baseUrl = 'https://anix.sh';
-  protected override logo = 'https://anix.sh/img/logo.png';
+  protected override baseUrl = 'https://anix.com.pl';
+  protected override logo = 'https://anix.com.pl/img/logo.png';
   protected override classPath = 'ANIME.Anix';
   private readonly MediaCategory = {
     MOVIE: 1,

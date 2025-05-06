@@ -16,7 +16,7 @@ import {
  */
 class KickAssAnime extends AnimeParser {
   override readonly name = 'KickAssAnime';
-  protected override baseUrl = 'https://www2.kickassanime.ro';
+  protected override baseUrl = 'https://kaa.mx';
   protected override logo =
     'https://user-images.githubusercontent.com/65111632/95666535-4f6dba80-0ba6-11eb-8583-e3a2074590e9.png';
   protected override classPath = 'ANIME.KickAssAnime';

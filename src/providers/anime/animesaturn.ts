@@ -17,8 +17,8 @@ import { Mp4Player } from '../../extractors';
 
 class AnimeSaturn extends AnimeParser {
   override readonly name = 'AnimeSaturn';
-  protected override baseUrl = 'https://www.animesaturn.tv/';
-  protected override logo = 'https://www.animesaturn.tv/immagini/favicon-32x32.png';
+  protected override baseUrl = 'https://www.animesaturn.ac/';
+  protected override logo = 'https://www.animesaturn.ac/immagini/favicon-32x32.png';
   protected override classPath = 'ANIME.AnimeSaturn';
 
   /**

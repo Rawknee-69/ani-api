@@ -12,7 +12,7 @@ import {
 
 class MangaKakalot extends MangaParser {
   override readonly name = 'MangaKakalot';
-  protected override baseUrl = 'https://mangakakalot.com';
+  protected override baseUrl = 'https://mangakakalot.gg';
   protected override logo = 'https://techbigs.com/uploads/2022/1/mangakakalot-apkoptimized.jpg';
   protected override classPath = 'MANGA.MangaKakalot';
 
@@ -21,7 +21,7 @@ class MangaKakalot extends MangaParser {
       id: mangaId,
       title: '',
     };
-    const url = mangaId.includes('read') ? this.baseUrl : 'https://chapmanganato.to';
+    const url = mangaId.includes('read') ? this.baseUrl : 'https://mangakakalot.gg';
     try {
       const { data } = await this.client.get(`${url}/${mangaId}`);
       const $ = load(data);

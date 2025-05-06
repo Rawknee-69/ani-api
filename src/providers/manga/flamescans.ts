@@ -12,7 +12,7 @@ import {
 
 class FlameScans extends MangaParser {
   override readonly name = 'FlameScans';
-  protected override baseUrl = 'https://flamescans.org/';
+  protected override baseUrl = 'https://firescans.xyz/';
   protected override logo = 'https://i.imgur.com/Nt1MW3H.png';
   protected override classPath = 'MANGA.FlameScans';
 

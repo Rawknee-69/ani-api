@@ -15,8 +15,8 @@ import {
 
 class MonosChinos extends AnimeParser {
   override readonly name = 'MonosChinos';
-  protected override baseUrl = 'https://monoschinos2.com';
-  protected override logo = 'https://monoschinos2.com/public/favicon.ico?v=4.57';
+  protected override baseUrl = 'https://monoschinos2.net';
+  protected override logo = 'https://monoschinos2.net/public/favicon.ico?v=4.57';
   protected override classPath = 'ANIME.MonosChinos';
 
   /**
