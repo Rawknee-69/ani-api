@@ -1,0 +1,23 @@
+import MangaDex from './mangadex';
+import ComicK from './comick';
+import MangaHere from './mangahere';
+import MangaKakalot from './mangakakalot';
+import Mangasee123 from './mangasee123';
+import Mangapark from './mangapark';
+import MangaPill from './mangapill';
+import MangaReader from './mangareader';
+import MangaHost from './mangahost';
+import BRMangas from './brmangas';
+declare const _default: {
+    MangaDex: typeof MangaDex;
+    ComicK: typeof ComicK;
+    MangaHere: typeof MangaHere;
+    MangaKakalot: typeof MangaKakalot;
+    Mangasee123: typeof Mangasee123;
+    Mangapark: typeof Mangapark;
+    MangaPill: typeof MangaPill;
+    MangaReader: typeof MangaReader;
+    MangaHost: typeof MangaHost;
+    BRMangas: typeof BRMangas;
+};
+export default _default;
