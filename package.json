@@ -57,7 +57,8 @@
     "fastify": "^5.3.2",
     "form-data": "^4.0.0",
     "husky": "^9.1.1",
-    "ioredis": "^5.6.1"
+    "ioredis": "^5.6.1",
+    "string-similarity-js": "^2.1.4"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.3",
