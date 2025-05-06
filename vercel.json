@@ -5,10 +5,12 @@
     { "src": "static/**/*", "use": "@vercel/static" }
   ],
   "routes": [
+    { "src": "/api/v1/meta/anilist/info/([^/]+)", "dest": "/api/standalone.js" },
     { "src": "/standalone", "dest": "/api/standalone.js" },
+    { "src": "/api/v1/meta/anilist", "dest": "/api/fallback.js" },
     { "src": "/api/(.*)", "dest": "/api/index.js" },
     { "src": "^/$", "dest": "/static/index.html" },
-    { "src": "/(.*)", "dest": "/api/index.js" }
+    { "src": "/(.*)", "dest": "/api/fallback.js" }
   ],
   "build": {
     "env": {
