@@ -13,7 +13,7 @@
     "lint": "prettier --write .",
     "prepare": "husky || true",
     "dev": "bun run src/main.ts",
-    "start": "node public/main.js",
+    "start": "node server.js",
     "vercel-build": "npm run build"
   },
   "pre-commit": [
