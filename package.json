@@ -2,26 +2,24 @@
   "name": "@consumet/extensions",
   "version": "1.8.1",
   "description": "Nodejs library that provides high-level APIs for obtaining information on various entertainment media such as books, movies, comic books, anime, manga, and so on.",
-  "main": "server.js",
-  "types": "public/index.d.ts",
+  "main": "index.js",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": ">=14.x"
   },
   "scripts": {
-    "build": "rimraf public && tsc -p tsconfig.json",
-    "version": "auto-changelog -p && git add CHANGELOG.md",
+    "build": "rimraf dist && tsc -p tsconfig.json",
     "lint": "prettier --write .",
     "prepare": "husky || true",
     "dev": "bun run src/main.ts",
-    "start": "node server.js",
-    "vercel-build": "node vercel-build.js"
+    "start": "node dist/main.js"
   },
   "pre-commit": [
     "lint",
     "build"
   ],
   "files": [
-    "public"
+    "dist"
   ],
   "repository": {
     "type": "git",
